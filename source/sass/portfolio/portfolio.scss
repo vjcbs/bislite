@@ -1,0 +1,27 @@
+.portfolio {
+  // @include border(red);
+
+  .wrapper {
+    padding: 50px 30px;
+  }
+
+  .portfolio__header {
+    @include flex-row;
+    align-items: baseline;
+  }
+
+  .portfolio__list {
+    @include reset-list;
+  }
+
+  .portfolio__btn-group {
+    // @include border(red);
+    justify-content: center;
+    // align-items: stretch;
+    flex-wrap: wrap;
+
+    .btn {
+      // margin-top: 1px;
+    }
+  }
+}

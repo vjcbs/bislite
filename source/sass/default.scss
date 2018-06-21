@@ -10,25 +10,29 @@ html {
 
 body {
   @include reset-mp;
-  @include set-font($size: 16px);
+  @include font($size: 16px);
 }
 
 .wrapper {
-  position: relative;
-  max-width: 1680px;
+  max-width: 1440px;
   margin: 0 auto;
-  overflow-x: hidden;
+  padding: 20px 15px;
 
-  @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
-    overflow-x: hidden;
+  @media (min-width: 768px) {
+    padding: 25px 30px;
+  }
+
+  @media (min-width: 992px) {
+    padding: 30px 50px;
   }
 }
 
-.main-title {
-  @include heading;
+h2 {
+  font-size: $h2-size;
+  text-transform: uppercase;
 }
 
-.site-list {
-  @include flex-column;
-  @include list-reset;
+.blue-text {
+  font-family: "Lato Regular", "Helvetica", "Arial", sans-serif;
+  color: $blue;
 }

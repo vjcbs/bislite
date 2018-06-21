@@ -17,93 +17,74 @@
 </head>
 <body>
   <header class="header">
-    <nav class="navbar navbar-expand-md header__nav">
-      <a class="navbar-brand header__brand" href="#">Bis<span class="blue-text">Lite</span></a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navMenu" aria-controls="navMenu" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
+    <div class="container wrapper">
+      <nav class="navbar navbar-expand-md header__nav">
+        <a class="navbar-brand header__brand" href="index.html">Bis<span class="blue-text">Lite</span></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navMenu" aria-controls="navMenu" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
 
-      <div class="collapse navbar-collapse header__menu-wrapper" id="navMenu">
-        <ul class="navbar-nav mr-auto header__list">
-          <li class="nav-item header__item active">
-            <a class="header__nav-link">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="header__nav-link">About Us</a>
-          </li>
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="servicesDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-              Services
-            </a>
-            <div class="dropdown-menu" aria-labelledby="servicesDropdown">
-              <a class="dropdown-item" href="#">Web Design</a>
-              <a class="dropdown-item" href="#">Wordpress Design</a>
-              <a class="dropdown-item" href="#">Mobile App Development</a>
-              <a class="dropdown-item" href="#">Internet Marketing</a>
-              <a class="dropdown-item" href="#">Social Media Management</a>
-            </div>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link dropdown-toggle" href="#" id="portfolioDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-              Portfolio
-            </a>
-            <div class="dropdown-menu" aria-labelledby="portfolioDropdown">
-              <a class="dropdown-item" href="#">Action</a>
-              <a class="dropdown-item" href="#">Another action</a>
-              <a class="dropdown-item" href="#">Something else here</a>
-            </div>
-          </li>
-          <li class="nav-item">
-            <a class="header__nav-link">Blog</a>
-          </li>
-          <li class="nav-item">
-            <a class="header__nav-link">Contact us</a>
-          </li>
-        </ul>
-      </div>
-    </nav>
+        <div class="collapse navbar-collapse header__menu-wrapper" id="navMenu">
+          <ul class="navbar-nav ml-auto header__list">
+            <li class="nav-item header__item active">
+              <a class="nav-link header__nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item header__item">
+              <a class="nav-link header__nav-link" href="#">About Us</a>
+            </li>
+            <li class="nav-item header__item dropdown">
+              <a class="nav-link dropdown-toggle header__nav-link" href="#" id="servicesDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Services
+              </a>
+              <div class="dropdown-menu" aria-labelledby="servicesDropdown">
+                <a class="dropdown-item" href="#">Web Design</a>
+                <a class="dropdown-item" href="#">Wordpress Design</a>
+                <a class="dropdown-item" href="#">Mobile App Development</a>
+                <a class="dropdown-item" href="#">Internet Marketing</a>
+                <a class="dropdown-item" href="#">Social Media Management</a>
+              </div>
+            </li>
+            <li class="nav-item header__item dropdown">
+              <a class="nav-link dropdown-toggle header__nav-link" href="#" id="portfolioDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Portfolio
+              </a>
+              <div class="dropdown-menu" aria-labelledby="portfolioDropdown">
+                <a class="dropdown-item" href="portfolio.html">Go to Portfolio</a>
+                <a class="dropdown-item" href="#">Another action</a>
+                <a class="dropdown-item" href="#">Something else here</a>
+              </div>
+            </li>
+            <li class="nav-item header__item">
+              <a class="nav-link header__nav-link" href="#">Blog</a>
+            </li>
+            <li class="nav-item header__item">
+              <a class="nav-link header__nav-link" href="contact.html">Contact us</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </div>
   </header>
 
   <section class="main">
     <section class="jumbo">
       <div class="wrapper">
-        <div id="headerCarousel" class="carousel slide" data-ride="carousel">
-          <ol class="carousel-indicators">
-            <li data-target="#headerCarousel" data-slide-to="0" class="active"></li>
-            <li data-target="#headerCarousel" data-slide-to="1"></li>
-            <li data-target="#headerCarousel" data-slide-to="2"></li>
-          </ol>
-          <div class="carousel-inner">
-            <div class="carousel-item active">
-              <h1 class="jumbo__title">We design clean, crisp & memorable icons</h1>
-              <img class="d-block w-100" src="http://via.placeholder.com/260x150" alt="First slide">
-            </div>
-            <div class="carousel-item">
-              <img class="d-block w-100" src="http://via.placeholder.com/260x150" alt="Second slide">
-            </div>
-            <div class="carousel-item">
-              <img class="d-block w-100" src="http://via.placeholder.com/260x150" alt="Third slide">
-            </div>
-          </div>
-          <!-- <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="sr-only">Previous</span>
-          </a>
-          <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="sr-only">Next</span>
-          </a> -->
+
+        <div class="jumbo__img-wrapper">
+          <h1 class="jumbo__title">We design clean, crisp & memorable icons</h1>
+          <img src="img/jumbo-background.png" />
         </div>
+
       </div>
     </section>
 
     <section class="about">
-      <div class="wrapper">
-        <ul class="about__list">
-          <li class="about__item">
+      <div class="container wrapper">
+        <ul class="row about__list">
+          <li class="col-sm-6 col-lg-3 about__item">
             <div class="about__title-wrapper">
+              <img class="about__icon" src="img/ic-clean-theme.png"/>
               <h2 class="about__title">Clean Theme</h2>
-              <img class="about__icon" src="http://via.placeholder.com/50x50"/>
             </div>
             <p class="about__text">
               Ut nec lorem id orci convallis porta. Donec pharetra neque eu velit
@@ -111,10 +92,10 @@
             </p>
             <a class="about__link" href="#">Read More</a>
           </li>
-          <li class="about__item">
+          <li class="col-sm-6 col-lg-3 about__item">
             <div class="about__title-wrapper">
+              <img class="about__icon" src="img/ic-responsive-design.png"/>
               <h2 class="about__title">Responsive design</h2>
-              <img class="about__icon" src="http://via.placeholder.com/50x50"/>
             </div>
             <p class="about__text">
               Ut nec lorem id orci convallis porta. Donec pharetra neque eu velit
@@ -122,10 +103,10 @@
             </p>
             <a class="about__link" href="#">Read More</a>
           </li>
-          <li class="about__item">
+          <li class="col-sm-6 col-lg-3 about__item">
             <div class="about__title-wrapper">
+              <img class="about__icon" src="img/ic-fully-layered-psd.png"/>
               <h2 class="about__title">Fully layered psd</h2>
-              <img class="about__icon" src="http://via.placeholder.com/50x50"/>
             </div>
             <p class="about__text">
               Ut nec lorem id orci convallis porta. Donec pharetra neque eu velit
@@ -133,10 +114,10 @@
             </p>
             <a class="about__link" href="#">Read More</a>
           </li>
-          <li class="about__item">
+          <li class="col-sm-6 col-lg-3 about__item">
             <div class="about__title-wrapper">
+              <img class="about__icon" src="img/ic-ready-for-coding.png"/>
               <h2 class="about__title">Ready for coding</h2>
-              <img class="about__icon" src="http://via.placeholder.com/50x50"/>
             </div>
             <p class="about__text">
               Ut nec lorem id orci convallis porta. Donec pharetra neque eu velit
@@ -149,35 +130,41 @@
     </section>
 
     <section class="works">
-      <div class="wrapper">
-        <header class="works__header">
-          <img class="works__header-icon" src="http://via.placeholder.com/20x20" />
-          <h2 class="works__title">Latest Works</h2>
+      <div class="container wrapper">
+        <header class="block-header works__header">
+          <div class="works__title-wrapper">
+            <img class="works__title-icon" src="img/ic-mouse.png" />
+            <h2 class="works__title">Latest Works</h2>
+          </div>
+          <div class="works__controls">
+            <span class="works__control-left"></span>
+            <span class="works__control-right"></span>
+          </div>
         </header>
-        <div class="works__gallery">
-          <ul class="works__list">
-            <li class="works__item">
-              <img class="works__img" src="http://via.placeholder.com/150x100"/>
+        <div class="container-fluid works__gallery">
+          <ul class="row works__list">
+            <li class="col-sm-6 col-lg-3 works__item">
+              <img class="works__img" src="img/img-notes.png"/>
             </li>
-            <li class="works__item">
-              <img class="works__img" src="http://via.placeholder.com/150x100"/>
+            <li class="col-sm-6 col-lg-3 works__item">
+              <img class="works__img" src="img/img-lemons.png"/>
             </li>
-            <li class="works__item">
-              <img class="works__img" src="http://via.placeholder.com/150x100"/>
+            <li class="col-sm-6 col-lg-3 works__item">
+              <img class="works__img" src="img/img-shapes.png"/>
             </li>
-            <li class="works__item">
-              <img class="works__img" src="http://via.placeholder.com/150x100"/>
+            <li class="col-sm-6 col-lg-3 works__item">
+              <img class="works__img" src="img/img-darts.png"/>
             </li>
           </ul>
         </div>
       </div>
     </section>
 
-    <section class="feedback">
-      <div class="wrapper">
-        <article class="feedback__item">
+    <section class="container-fluid feedback">
+      <div class="row wrapper">
+        <article class="col-md-6 feedback__record">
           <header class="feedback__header">
-            <img class="feedback__icon" src="http://via.placeholder.com/20x20"/>
+            <img class="feedback__icon" src="img/ic-comments.png"/>
             <h2 class="feedback__title">Testimonials</h2>
           </header>
           <blockquote class="feedback__text">
@@ -190,156 +177,169 @@
           </blockquote>
           <span class="feedback__author">John Travis, CEO, DomainName.com</span>
         </article>
-        <section class="feedback__sources">
+        <section class="col-md-6 feedback__sources">
           <header class="feedback__header">
-            <img class="feedback__icon" src="http://via.placeholder.com/20x20"/>
+            <img class="feedback__icon" src="img/ic-clients.png"/>
             <h2 class="feedback__title">Our clients</h2>
           </header>
-          <div class="feedback__gallery">
-            <ul class="feedback__list">
-              <li class="feedback__item">
-                <img class="feedback__img" src="http://via.placeholder.com/100x50"/>
-              </li>
-              <li class="feedback__item">
-                <img class="feedback__img" src="http://via.placeholder.com/100x50"/>
-              </li>
-              <li class="feedback__item">
-                <img class="feedback__img" src="http://via.placeholder.com/100x50"/>
-              </li>
-              <li class="feedback__item">
-                <img class="feedback__img" src="http://via.placeholder.com/100x50"/>
-              </li>
-              <li class="feedback__item">
-                <img class="feedback__img" src="http://via.placeholder.com/100x50"/>
-              </li>
-              <li class="feedback__item">
-                <img class="feedback__img" src="http://via.placeholder.com/100x50"/>
-              </li>
-            </ul>
-          </div>
+          <table class="feedback__gallery">
+            <tbody>
+              <tr>
+                <td>
+                  <img class="feedback__img" src="img/ic-cox.png"/>
+                </td>
+                <td>
+                  <img class="feedback__img" src="img/ic-cnn.png"/>
+                </td>
+                <td>
+                  <img class="feedback__img" src="img/ic-apartment-finder.png"/>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <img class="feedback__img" src="img/ic-john-deere.png"/>
+                </td>
+                <td>
+                  <img class="feedback__img" src="img/ic-banana-boat.png"/>
+                </td>
+                <td>
+                  <img class="feedback__img" src="img/ic-fujifilm.png"/>
+                </td>
+              </tr>
+            </tbody>
+          </table>
         </section>
       </div>
     </section>
 
-    <section class="download">
+    <section class="container-fluid download">
       <div class="wrapper">
         <p class="download__text">
           This is a clean and modern, four column website PSD template. You can
           code it into a Wordpress website, HTML5 responsive website for your
-          personal or client works. So ahead and download this wonderful PSD template!
+          personal or client works. So go ahead and download this wonderful PSD template!
         </p>
-        <a class="download__button" href="#">
-          <img class="download__button-icon" src="http://via.placeholder.com/30x30" />
+        <a class="download__button">
+          <img class="download__button-icon" src="img/ic-download.png" />
           <span class="download__button-caption">Download</span>
         </a>
       </div>
     </section>
   </section>
 
-  <footer class="footer">
-    <section class="footer__about">
-      <h2 class="footer__title">About us</h2>
-      <p class="footer__text">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi euismod
-        placerat dui et tincidunt. Sed sollicitudin posuere auctor. Phasellus at
-        ultricies nisl. Integer at leo eros. Ut nec lorem id orci convallis porta.
-        Donec pharetra neque eu velit dictum molestie.
-      </p>
-    </section>
-    <section class="footer__navs">
-      <div class="footer__nav">
-        <h3 class="footer__title">Explore</h3>
-        <ul class="footer__list">
-          <li class="footer__item">
-            <a class="footer__link">Home</a>
-          </li>
-          <li class="footer__item">
-            <a class="footer__link">About us</a>
-          </li>
-          <li class="footer__item">
-            <a class="footer__link">Services</a>
-          </li>
-          <li class="footer__item">
-            <a class="footer__link">Portfolio</a>
-          </li>
-          <li class="footer__item">
-            <a class="footer__link">Blog</a>
-          </li>
-        </ul>
-      </div>
+  <footer class="container-fluid footer">
+    <div class="wrapper">
+      <div class="row">
+        <section class="col-md-4 col-lg-3 footer__about">
+          <h2 class="footer__title">About us</h2>
+          <p class="footer__text">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi euismod
+            placerat dui et tincidunt. Sed sollicitudin posuere auctor. Phasellus at
+            ultricies nisl. Integer at leo eros. Ut nec lorem id orci convallis porta.
+            Donec pharetra neque eu velit dictum molestie.
+          </p>
+        </section>
+        <section class="col-md-4 col-lg-4 row footer__navs">
+          <div class="col-lg-6 footer__nav">
+            <h2 class="footer__title">Explore</h2>
+            <ul class="footer__list">
+              <li class="footer__item">
+                <a class="footer__link">Home</a>
+              </li>
+              <li class="footer__item">
+                <a class="footer__link">About us</a>
+              </li>
+              <li class="footer__item">
+                <a class="footer__link">Services</a>
+              </li>
+              <li class="footer__item">
+                <a class="footer__link">Portfolio</a>
+              </li>
+              <li class="footer__item">
+                <a class="footer__link">Blog</a>
+              </li>
+            </ul>
+          </div>
 
-      <div class="footer__nav">
-        <h3 class="footer__title">Browse</h3>
-        <ul class="footer__list">
-          <li class="footer__item">
-            <a class="footer__link">Careers</a>
-          </li>
-          <li class="footer__item">
-            <a class="footer__link">Press & Media</a>
-          </li>
-          <li class="footer__item">
-            <a class="footer__link">Contact Us</a>
-          </li>
-          <li class="footer__item">
-            <a class="footer__link">Terms of Service</a>
-          </li>
-          <li class="footer__item">
-            <a class="footer__link">Privacy Policy</a>
-          </li>
-        </ul>
-      </div>
-    </section>
-    <section class="footer__contact">
-      <h3 class="footer__title">Contact Us</h3>
-      <p class="footer__contact-info">
-        <b>BisLite Inc.</b>
-        Always Street 265
-        0X - 125 - Canada
+          <div class="col-lg-6 footer__nav">
+            <h2 class="footer__title">Browse</h2>
+            <ul class="footer__list">
+              <li class="footer__item">
+                <a class="footer__link">Careers</a>
+              </li>
+              <li class="footer__item">
+                <a class="footer__link">Press & Media</a>
+              </li>
+              <li class="footer__item">
+                <a class="footer__link">Contact Us</a>
+              </li>
+              <li class="footer__item">
+                <a class="footer__link">Terms of Service</a>
+              </li>
+              <li class="footer__item">
+                <a class="footer__link">Privacy Policy</a>
+              </li>
+            </ul>
+          </div>
+        </section>
 
-        Phone: 987-6543-210
-        Fax: 987-6543-210
-      </p>
-    </section>
-    <section class="footer__social">
-      <h3 class="footer__title">Connect with us</h3>
-      <ul class="footer__list">
-        <li class="footer__item">
-          <a class="footer__link">
-            <img class="footer__social-icon" src="http://via.placeholder.com/30x30" />
-          </a>
-        </li>
-        <li class="footer__item">
-          <a class="footer__link">
-            <img class="footer__social-icon" src="http://via.placeholder.com/30x30" />
-          </a>
-        </li>
-        <li class="footer__item">
-          <a class="footer__link">
-            <img class="footer__social-icon" src="http://via.placeholder.com/30x30" />
-          </a>
-        </li>
-        <li class="footer__item">
-          <a class="footer__link">
-            <img class="footer__social-icon" src="http://via.placeholder.com/30x30" />
-          </a>
-        </li>
-        <li class="footer__item">
-          <a class="footer__link">
-            <img class="footer__social-icon" src="http://via.placeholder.com/30x30" />
-          </a>
-        </li>
-        <li class="footer__item">
-          <a class="footer__link">
-            <img class="footer__social-icon" src="http://via.placeholder.com/30x30" />
-          </a>
-        </li>
-      </ul>
-    </section>
-    <section class="footer__copyright">
-      <span class="footer__copyright-span">© Copyright 2012 - BisLite Inc. All rights reserved.</span>
-      <a class="footer__copyright-logo" href="#">Bis<span class="blue-text">Lite</span></a>
-    </section>
+        <section class="col-md scol-lg-3 footer__contact">
+          <h2 class="footer__title">Contact Us</h2>
+          <p class="footer__contact-info">
+            <b>BisLite Inc.</b>
+            <br />
+            Always Street 265
+            0X-125-Canada
+          </p>
+          <p class="footer__contact-info">
+            Phone: 987-6543-210<br />
+            Fax: 987-6543-210
+          </p>
+        </section>
+        <section class="col-md col-lg footer__social">
+          <h2 class="footer__title">Connect with us</h2>
+          <ul class="footer__list">
+            <li class="footer__item">
+              <a class="footer__link">
+                <img class="footer__social-icon" src="img/ic-twitter.svg" width="30" height="30"/>
+              </a>
+            </li>
+            <li class="footer__item">
+              <a class="footer__link">
+                <img class="footer__social-icon" src="img/ic-facebook.svg" width="30" height="30"/>
+              </a>
+            </li>
+            <li class="footer__item">
+              <a class="footer__link">
+                <img class="footer__social-icon" src="img/ic-linkedin.svg" width="30" height="30" />
+              </a>
+            </li>
+            <li class="footer__item">
+              <a class="footer__link">
+                <img class="footer__social-icon" src="img/ic-google+.svg" width="30" height="30"/>
+              </a>
+            </li>
+            <li class="footer__item">
+              <a class="footer__link">
+                <img class="footer__social-icon" src="img/ic-instagram.svg" width="30" height="30"/>
+              </a>
+            </li>
+            <li class="footer__item">
+              <a class="footer__link">
+                <img class="footer__social-icon" src="img/ic-reddit.svg" width="30" height="30"/>
+              </a>
+            </li>
+          </ul>
+        </section>
+        <section class="col-lg-12 footer__copyright">
+          <span class="footer__copyright-span">© Copyright 2018 - BisLite Inc. All rights reserved.</span>
+          <a class="footer__copyright-logo" href="#">Bis<span class="blue-text">Lite</span></a>
+        </section>
+      </div>
+    </div>
   </footer>
+
+
 
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
   integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
@@ -347,5 +347,7 @@
   integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"
   integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+
+  <script src="js/script.js"></script>
 </body>
 </html>

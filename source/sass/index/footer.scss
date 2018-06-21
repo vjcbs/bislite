@@ -1,0 +1,134 @@
+.footer {
+  background-color: $lightgray;
+  padding: 20px 15px;
+
+  .footer__about {
+    margin-bottom: 20px;
+  }
+
+  .footer__list {
+    @include reset-list;
+    @include flex-row;
+    flex-wrap: wrap;
+    justify-content: center;
+    // align-items: center;
+  }
+
+  .footer__title {
+    // display: block;
+    // margin: 0 auto;
+
+    // width: 50%;
+    // margin: 0 auto;
+    margin-bottom: 0;
+    text-align: center;
+    // @include border;
+  }
+
+  .footer__navs {
+    margin-bottom: 20px;
+  }
+
+  .footer__nav {
+    margin-bottom: 10px;
+  }
+
+  .footer__item {
+    margin-left: 10px;
+    margin-top: 5px;
+  }
+
+  .footer__contact {
+    @include flex-column;
+    align-items: center;
+  }
+
+  .footer__contact-info {
+    text-align: center;
+    margin-top: 5px;
+  }
+
+  .footer__copyright {
+    @include flex-row;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 30px;
+  }
+
+  .footer__copyright-logo {
+    @include font($name: "Lato Black", $size: 30px);
+    text-decoration: none;
+  }
+
+}
+
+@media (min-width: 576px) {
+  .footer {
+    .footer__copyright-logo {
+      font-size: 35px;
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  .footer {
+    .footer__copyright-logo {
+      font-size: 40px;
+    }
+  }
+}
+
+@media (min-width: 992px) {
+  .footer {
+    .wrapper {
+      padding: 30px 50px;
+    }
+
+    .footer__title {
+      text-align: left;
+      margin-bottom: 10px;
+    }
+
+    .footer__list {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+
+    .footer__item {
+      margin-left: 0;
+    }
+
+    .footer__contact {
+      @include flex-column;
+      align-items: flex-start;
+    }
+
+    .footer__contact-info {
+      text-align: left;
+    }
+
+    .footer__social {
+      @include flex-column;
+      // align-items: center;
+
+      .footer__list {
+        flex-direction: row;
+        justify-content: center;
+        max-width: 120px;
+      }
+
+      .footer__item {
+        margin-left: 10px;
+
+        &:nth-child(1),
+        &:nth-child(4) {
+          margin-left: 0;
+        }
+      }
+    }
+
+    .footer__copyright-logo {
+      font-size: 45px;
+    }
+  }
+}

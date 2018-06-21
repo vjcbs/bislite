@@ -17,199 +17,244 @@
 </head>
 <body>
   <header class="header">
-    <nav class="navbar navbar-expand-md header__nav">
-      <a class="navbar-brand header__brand" href="#">Bis<span class="blue-text">Lite</span></a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navMenu" aria-controls="navMenu" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
+    <div class="container wrapper">
+      <nav class="navbar navbar-expand-md header__nav">
+        <a class="navbar-brand header__brand" href="index.html">Bis<span class="blue-text">Lite</span></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navMenu" aria-controls="navMenu" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
 
-      <div class="collapse navbar-collapse header__menu-wrapper" id="navMenu">
-        <ul class="navbar-nav mr-auto header__list">
-          <li class="nav-item header__item active">
-            <a class="header__nav-link">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="header__nav-link">About Us</a>
-          </li>
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="servicesDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-              Services
-            </a>
-            <div class="dropdown-menu" aria-labelledby="servicesDropdown">
-              <a class="dropdown-item" href="#">Web Design</a>
-              <a class="dropdown-item" href="#">Wordpress Design</a>
-              <a class="dropdown-item" href="#">Mobile App Development</a>
-              <a class="dropdown-item" href="#">Internet Marketing</a>
-              <a class="dropdown-item" href="#">Social Media Management</a>
-            </div>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link dropdown-toggle" href="#" id="portfolioDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-              Portfolio
-            </a>
-            <div class="dropdown-menu" aria-labelledby="portfolioDropdown">
-              <a class="dropdown-item" href="#">Action</a>
-              <a class="dropdown-item" href="#">Another action</a>
-              <a class="dropdown-item" href="#">Something else here</a>
-            </div>
-          </li>
-          <li class="nav-item">
-            <a class="header__nav-link">Blog</a>
-          </li>
-          <li class="nav-item">
-            <a class="header__nav-link">Contact us</a>
-          </li>
-        </ul>
-      </div>
-    </nav>
+        <div class="collapse navbar-collapse header__menu-wrapper" id="navMenu">
+          <ul class="navbar-nav ml-auto header__list">
+            <li class="nav-item header__item active">
+              <a class="nav-link header__nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item header__item">
+              <a class="nav-link header__nav-link" href="#">About Us</a>
+            </li>
+            <li class="nav-item header__item dropdown">
+              <a class="nav-link dropdown-toggle header__nav-link" href="#" id="servicesDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Services
+              </a>
+              <div class="dropdown-menu" aria-labelledby="servicesDropdown">
+                <a class="dropdown-item" href="#">Web Design</a>
+                <a class="dropdown-item" href="#">Wordpress Design</a>
+                <a class="dropdown-item" href="#">Mobile App Development</a>
+                <a class="dropdown-item" href="#">Internet Marketing</a>
+                <a class="dropdown-item" href="#">Social Media Management</a>
+              </div>
+            </li>
+            <li class="nav-item header__item dropdown">
+              <a class="nav-link dropdown-toggle header__nav-link" href="#" id="portfolioDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Portfolio
+              </a>
+              <div class="dropdown-menu" aria-labelledby="portfolioDropdown">
+                <a class="dropdown-item" href="portfolio.html">Go to Portfolio</a>
+                <a class="dropdown-item" href="#">Another action</a>
+                <a class="dropdown-item" href="#">Something else here</a>
+              </div>
+            </li>
+            <li class="nav-item header__item">
+              <a class="nav-link header__nav-link" href="#">Blog</a>
+            </li>
+            <li class="nav-item header__item">
+              <a class="nav-link header__nav-link" href="contact.html">Contact us</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </div>
   </header>
 
   <section class="contact">
-    <div class="wrapper">
+    <div class="container wrapper">
       <header class="contact__header">
         <img class="contact__header-icon" src="http://via.placeholder.com/20x20" />
         <h2 class="contact__title">Contact Us</h2>
       </header>
-      <form class="contact__form" action="https://echo.htmlacademy.ru" method="post">
-        <p class="contact__form-text">
-
-        </p>
-        <p class="contact__form-text">
-
-        </p>
-        <div class="contact__form-name">
-          <label class="contact__form-label" for="input-name">Name</label>
-          <input class="contact__form-input" type="text" id="input-name" name="name" required>
-        </div>
-        <div class="contact__form-email">
-          <label class="contact__form-label" for="input-email">Name</label>
-          <input class="contact__form-input" type="text" id="input-email" name="email" required>
-        </div>
-        <div class="contact__form-subject">
-          <label class="contact__form-label" for="input-subject">Name</label>
-          <input class="contact__form-input" type="text" id="input-subject" name="subject" required>
-        </div>
-        <div class="contact__form-description">
-          <label class="contact__form-label" for="input-description">Name</label>
-          <textarea class="contact__form-input" type="text" id="input-description" name="description" rows="8" required></textarea>
-        </div>
-        <button class="contact__form-submit" type="submit" value="Send">Submit</button>
-      </form>
-
-      <div class="contact__map">
-        <div class="contact__map-wrapper">
-          <h4 class="contact__map-title">We are here</h4>
-          <div class="contact__map-widget" id="map">
-
-          </div>
-        </div>
-        <div class="contact__map-info">
-          <h4 class="contact__map-title">Office address</h4>
-          <p class="contact__text">
+      <div class="row">
+        <form class="col-md-6 contact__form" action="https://echo.htmlacademy.ru" method="post">
+          <p class="contact__form-text">
 
           </p>
+          <p class="contact__form-text">
+
+          </p>
+
+          <div class="input-group mb-3">
+            <div class="input-group-prepend">
+              <span class="input-group-text" id="inputGroup-sizing-default">Name</span>
+            </div>
+            <input type="text" class="form-control" aria-label="Name" aria-describedby="inputGroup-sizing-default">
+          </div>
+
+          <div class="input-group mb-3">
+            <div class="input-group-prepend">
+              <span class="input-group-text" id="inputGroup-sizing-default">Email</span>
+            </div>
+            <input type="text" class="form-control" aria-label="Email" aria-describedby="inputGroup-sizing-default">
+          </div>
+
+          <div class="input-group mb-3">
+            <div class="input-group-prepend">
+              <span class="input-group-text" id="inputGroup-sizing-default">Subject</span>
+            </div>
+            <input type="text" class="form-control" aria-label="Subject" aria-describedby="inputGroup-sizing-default">
+          </div>
+
+          <div class="input-group">
+            <div class="input-group-prepend">
+              <span class="input-group-text">Description</span>
+            </div>
+            <textarea class="form-control" aria-label="Description" rows="5"></textarea>
+          </div>
+          <!-- <div class="form-input contact__form-name">
+            <label class="contact__form-label" for="input-name">Name</label>
+            <input class="contact__form-input" type="text" id="input-name" name="name" required>
+          </div>
+          <div class="form-input contact__form-email">
+            <label class="contact__form-label" for="input-email">Email</label>
+            <input class="contact__form-input" type="text" id="input-email" name="email" required>
+          </div>
+          <div class="form-input contact__form-subject">
+            <label class="contact__form-label" for="input-subject">Subject</label>
+            <input class="contact__form-input" type="text" id="input-subject" name="subject" required>
+          </div>
+          <div class="form-input contact__form-description">
+            <label class="contact__form-label" for="input-description">Description</label>
+            <textarea class="contact__form-input" type="text" id="input-description" name="description" rows="8" required></textarea>
+          </div> -->
+          <button class="btn btn-primary contact__form-submit" type="submit" value="submit">Submit</button>
+        </form>
+
+        <div class="col-md-6 contact__map">
+          <div class="contact__map-wrapper">
+            <h4 class="contact__map-title">We are here</h4>
+            <div class="contact__map-widget" id="map">
+
+            </div>
+          </div>
+          <div class="contact__map-info">
+            <h4 class="contact__map-title">Office address</h4>
+            <p class="contact__text">
+
+            </p>
+          </div>
         </div>
       </div>
     </div>
   </section>
 
+  <footer class="container-fluid footer">
+    <div class="wrapper">
+      <div class="row">
+        <section class="col-md-4 col-lg-3 footer__about">
+          <h2 class="footer__title">About us</h2>
+          <p class="footer__text">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi euismod
+            placerat dui et tincidunt. Sed sollicitudin posuere auctor. Phasellus at
+            ultricies nisl. Integer at leo eros. Ut nec lorem id orci convallis porta.
+            Donec pharetra neque eu velit dictum molestie.
+          </p>
+        </section>
+        <section class="col-md-4 col-lg-4 row footer__navs">
+          <div class="col-lg-6 footer__nav">
+            <h2 class="footer__title">Explore</h2>
+            <ul class="footer__list">
+              <li class="footer__item">
+                <a class="footer__link">Home</a>
+              </li>
+              <li class="footer__item">
+                <a class="footer__link">About us</a>
+              </li>
+              <li class="footer__item">
+                <a class="footer__link">Services</a>
+              </li>
+              <li class="footer__item">
+                <a class="footer__link">Portfolio</a>
+              </li>
+              <li class="footer__item">
+                <a class="footer__link">Blog</a>
+              </li>
+            </ul>
+          </div>
 
+          <div class="col-lg-6 footer__nav">
+            <h2 class="footer__title">Browse</h2>
+            <ul class="footer__list">
+              <li class="footer__item">
+                <a class="footer__link">Careers</a>
+              </li>
+              <li class="footer__item">
+                <a class="footer__link">Press & Media</a>
+              </li>
+              <li class="footer__item">
+                <a class="footer__link">Contact Us</a>
+              </li>
+              <li class="footer__item">
+                <a class="footer__link">Terms of Service</a>
+              </li>
+              <li class="footer__item">
+                <a class="footer__link">Privacy Policy</a>
+              </li>
+            </ul>
+          </div>
+        </section>
 
-  <footer class="footer">
-    <section class="footer__about">
-      <h2 class="footer__title">About us</h2>
-      <p class="footer__text">
-
-      </p>
-    </section>
-    <section class="footer__navs">
-      <div class="footer__nav">
-        <h3 class="footer__title">Explore</h3>
-        <ul class="footer__list">
-          <li class="footer__item">
-            <a class="footer__link">Home</a>
-          </li>
-          <li class="footer__item">
-            <a class="footer__link">About us</a>
-          </li>
-          <li class="footer__item">
-            <a class="footer__link">Services</a>
-          </li>
-          <li class="footer__item">
-            <a class="footer__link">Portfolio</a>
-          </li>
-          <li class="footer__item">
-            <a class="footer__link">Blog</a>
-          </li>
-        </ul>
+        <section class="col-md scol-lg-3 footer__contact">
+          <h2 class="footer__title">Contact Us</h2>
+          <p class="footer__contact-info">
+            <b>BisLite Inc.</b>
+            <br />
+            Always Street 265
+            0X-125-Canada
+          </p>
+          <p class="footer__contact-info">
+            Phone: 987-6543-210<br />
+            Fax: 987-6543-210
+          </p>
+        </section>
+        <section class="col-md col-lg footer__social">
+          <h2 class="footer__title">Connect with us</h2>
+          <ul class="footer__list">
+            <li class="footer__item">
+              <a class="footer__link">
+                <img class="footer__social-icon" src="img/ic-twitter.svg" width="30" height="30"/>
+              </a>
+            </li>
+            <li class="footer__item">
+              <a class="footer__link">
+                <img class="footer__social-icon" src="img/ic-facebook.svg" width="30" height="30"/>
+              </a>
+            </li>
+            <li class="footer__item">
+              <a class="footer__link">
+                <img class="footer__social-icon" src="img/ic-linkedin.svg" width="30" height="30" />
+              </a>
+            </li>
+            <li class="footer__item">
+              <a class="footer__link">
+                <img class="footer__social-icon" src="img/ic-google+.svg" width="30" height="30"/>
+              </a>
+            </li>
+            <li class="footer__item">
+              <a class="footer__link">
+                <img class="footer__social-icon" src="img/ic-instagram.svg" width="30" height="30"/>
+              </a>
+            </li>
+            <li class="footer__item">
+              <a class="footer__link">
+                <img class="footer__social-icon" src="img/ic-reddit.svg" width="30" height="30"/>
+              </a>
+            </li>
+          </ul>
+        </section>
+        <section class="col-lg-12 footer__copyright">
+          <span class="footer__copyright-span">© Copyright 2018 - BisLite Inc. All rights reserved.</span>
+          <a class="footer__copyright-logo" href="#">Bis<span class="blue-text">Lite</span></a>
+        </section>
       </div>
-
-      <div class="footer__nav">
-        <h3 class="footer__title">Browse</h3>
-        <ul class="footer__list">
-          <li class="footer__item">
-            <a class="footer__link">Careers</a>
-          </li>
-          <li class="footer__item">
-            <a class="footer__link">Press & Media</a>
-          </li>
-          <li class="footer__item">
-            <a class="footer__link">Contact Us</a>
-          </li>
-          <li class="footer__item">
-            <a class="footer__link">Terms of Service</a>
-          </li>
-          <li class="footer__item">
-            <a class="footer__link">Privacy Policy</a>
-          </li>
-        </ul>
-      </div>
-    </section>
-    <section class="footer__contact">
-      <h3 class="footer__title">Contact Us</h3>
-      <p class="footer__contact-info">
-
-      </p>
-    </section>
-    <section class="footer__social">
-      <h3 class="footer__title">Connect with us</h3>
-      <ul class="footer__list">
-        <li class="footer__item">
-          <a class="footer__link">
-            <img class="footer__social-icon" src="http://via.placeholder.com/30x30" />
-          </a>
-        </li>
-        <li class="footer__item">
-          <a class="footer__link">
-            <img class="footer__social-icon" src="http://via.placeholder.com/30x30" />
-          </a>
-        </li>
-        <li class="footer__item">
-          <a class="footer__link">
-            <img class="footer__social-icon" src="http://via.placeholder.com/30x30" />
-          </a>
-        </li>
-        <li class="footer__item">
-          <a class="footer__link">
-            <img class="footer__social-icon" src="http://via.placeholder.com/30x30" />
-          </a>
-        </li>
-        <li class="footer__item">
-          <a class="footer__link">
-            <img class="footer__social-icon" src="http://via.placeholder.com/30x30" />
-          </a>
-        </li>
-        <li class="footer__item">
-          <a class="footer__link">
-            <img class="footer__social-icon" src="http://via.placeholder.com/30x30" />
-          </a>
-        </li>
-      </ul>
-    </section>
-    <section class="footer__copyright">
-      <span class="footer__copyright-span">Copyright 2012</span>
-      <a class="footer__copyright-logo" href="#">Bis<span class="blue-text">Lite</span></a>
-    </section>
+    </div>
   </footer>
 
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"

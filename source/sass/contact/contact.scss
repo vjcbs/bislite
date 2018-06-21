@@ -1,0 +1,26 @@
+.contact {
+  // @include border(red);
+  .contact__header {
+    @include flex-row;
+    align-items: baseline;
+  }
+
+  .contact__title {
+    margin-left: 10px;
+  }
+
+  .form-input {
+    @include flex-column;
+  }
+
+  .contact__form-submit {
+    margin-top: 20px;
+  }
+
+  .contact__map-wrapper {
+    background-color: #e8fcfe;
+    border: 1px solid $lightblue;
+    border-radius: 5px;
+    height: 300px;
+  }
+}

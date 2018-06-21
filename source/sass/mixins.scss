@@ -16,11 +16,6 @@
   line-height: $lh;
 }
 
-@mixin heading($size: 25px, $lh: 30px) {
-  @include set-font-bold($size: $size, $lh: $lh);
-  @include reset-mp;
-}
-
 @mixin reset-list {
   @include reset-mp;
   list-style: none;
