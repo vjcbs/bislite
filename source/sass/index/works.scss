@@ -1,17 +1,9 @@
 .works {
-  // @include border(blue);
-
-  // .wrapper {
-  //   padding: 30px;
-  // }
-
   .works__header {
     @include flex-row;
     justify-content: space-between;
     padding-bottom: 10px;
     border-bottom: 1px solid $lightgray;
-    // border-left: 0;
-    // border-right: 0;
   }
 
   .works__title-wrapper {
@@ -19,18 +11,21 @@
     justify-content: space-between;
     align-items: baseline;
     padding-top: 5px;
-
-    // @include border;
-    // height: 100%;
   }
 
   .works__title {
-    // font-size: 20px;
     margin-left: 10px;
   }
 
+  .works__title-icon {
+    width: 24px;
+    height: 24px;
+    // background: url("../img/sprite.png") no-repeat;
+    background-position: 0 -10px;
+    // background-color: $lightgray;
+  }
+
   .works__controls {
-    // @include border;
     @include flex-row;
     width: 45px;
     justify-content: space-between;
@@ -85,15 +80,66 @@
   .works__item {
     // @include border;
     margin-bottom: 10px;
-
+    overflow-y: hidden;
     // align-self: center;
     // @include border(red);
+  }
+
+  .works__item-wrapper {
+    position: relative;
+    width: 220px;
+    height: 160px;
+    margin: 0 auto;
+
+    &:hover > .works__info {
+      top: 100px;
+    }
   }
 
   .works__img {
     display: block;
     margin: 0 auto;
-    box-shadow: 2px 2px 5px 2px #a2a2a2;
+    // box-shadow: 2px 2px 5px 2px #a2a2a2;
+  }
+
+  .works__info {
+    @include flex-row;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 160px;
+    left: 0;
+    width: 100%;
+    height: 60px;
+    background-color: $blue;
+    transition: top 400ms;
+  }
+
+  .works__link {
+    @include reset-link;
+
+    &:hover {
+      opacity: 0.6;
+    }
+
+    &:active {
+      opacity: 0.3;
+    }
+  }
+
+  .works__link-preview {
+    display: block;
+    background: url("../img/ic-preview.png") no-repeat;
+    width: 35px;
+    height: 30px;
+  }
+
+  .works__link-link {
+    display: block;
+    background: url("../img/ic-link.png") no-repeat;
+    width: 30px;
+    height: 30px;
+    margin-left: 15px;
   }
 }
 

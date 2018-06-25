@@ -2,7 +2,7 @@
   background-color: $lightblue;
 
   .jumbo__title {
-    @include font($name: $bold-font, $size: 20px, $color: #ffffff, $lh: 25px);
+    @include font($name: $bold-font, $size: 18px, $color: #ffffff, $lh: 25px);
     // display: block;
     // margin: 0 auto 30px;
     width: 40%;

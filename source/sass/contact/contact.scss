@@ -9,18 +9,63 @@
     margin-left: 10px;
   }
 
-  .form-input {
-    @include flex-column;
+  .contact__form {
+    margin-bottom: 35px;
   }
 
   .contact__form-submit {
+    position: relative;
+    margin: 0;
     margin-top: 20px;
+    border: none;
+    outline: none;
+    // background: url("../img/sprite.png") no-repeat;
+    // background-position:
+    // align-self: flex-start;
+    // @include border;
+  }
+
+  .contact__submit-icon {
+    position: absolute;
+    top: 55%;
+    transform: translateY(-50%);
+    left: 20px;
+    width: 30px;
+    height: 30px;
+    background: url("../img/sprite.png") no-repeat;
+    background-position: -40px -40px;
+  }
+
+  .contact__submit-caption {
+    transform: translateX(15px);
   }
 
   .contact__map-wrapper {
+    height: 320px;
+    margin-bottom: 20px;
+    padding: 10px;
     background-color: #e8fcfe;
     border: 1px solid $lightblue;
     border-radius: 5px;
-    height: 300px;
+
+  }
+
+  .contact__map-widget {
+    border: 3px solid #ffffff;
+  }
+}
+
+@media (min-width: 768px) {
+  .contact {
+    .contact__map-wrapper {
+      @include flex-column;
+      padding: 20px;
+    }
+
+    .contact__map-widget {
+      width: 100%;
+      height: 280px;
+      background-color: $blue;
+    }
   }
 }

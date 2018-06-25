@@ -69,66 +69,62 @@
   <section class="portfolio">
     <div class="wrapper">
       <header class="portfolio__header">
-        <img class="portfolio__header-icon" src="http://via.placeholder.com/20x20" />
+        <span class="icon-small portfolio__header-icon"></span>
         <h2 class="portfolio__title">Portfolio</h2>
       </header>
-      <div class="btn-group btn-group-sm portfolio__btn-group" role="group" aria-label="Basic example">
+      <div class="btn-group btn-group-sm portfolio__btn-group" role="group" aria-label="Filter">
         <button type="button" class="btn btn-secondary">All</button>
         <button type="button" class="btn btn-secondary">Websites</button>
-        <button type="button" class="btn btn-secondary">Wordpress</button>
-        <button type="button" class="btn btn-secondary">Mobile Apps</button>
         <button type="button" class="btn btn-secondary">Icons</button>
-        <button type="button" class="btn btn-secondary">Logos</button>
-        <button type="button" class="btn btn-secondary">Graphics</button>
       </div>
       <div class="portfolio__gallery">
         <ul class="row portfolio__list">
-          <li class="col-6 col-sm-3  portfolio__item">
+          <li class="col-6 col-sm-3 portfolio__item">
             <a class="portfolio__link">
-              <img class="portfolio__img" src="http://via.placeholder.com/100x50"/>
+              <img class="portfolio__img" src="img/img-bell-btn.png"/>
+            </a>
+          </li>
+          <li class="col-6 col-sm-3 portfolio__item">
+            <a class="portfolio__link">
+              <img class="portfolio__img" src="img/img-gift.png"/>
+            </a>
+          </li>
+          <li class="col-6 col-sm-3 portfolio__item">
+            <a class="portfolio__link">
+              <img class="portfolio__img" src="img/img-smile.png"/>
+            </a>
+          </li>
+          <li class="col-6 col-sm-3 portfolio__item">
+            <a class="portfolio__link">
+              <img class="portfolio__img" src="img/img-books.png"/>
+            </a>
+          </li>
+          <li class="col-6 col-sm-3 portfolio__item">
+            <a class="portfolio__link">
+              <img class="portfolio__img" src="img/img-help-button.png"/>
+            </a>
+          </li>
+          <li class="col-6 col-sm-3 portfolio__item">
+            <a class="portfolio__link">
+              <img class="portfolio__img" src="img/img-login.png"/>
             </a>
           </li>
           <li class="col-6 col-sm-3  portfolio__item">
             <a class="portfolio__link">
-              <img class="portfolio__img" src="http://via.placeholder.com/100x50"/>
+              <img class="portfolio__img" src="img/img-clouds.png"/>
             </a>
           </li>
-          <li class="col-6 col-sm-3  portfolio__item">
+          <li class="col-6 col-sm-3 portfolio__item">
             <a class="portfolio__link">
-              <img class="portfolio__img" src="http://via.placeholder.com/100x50"/>
-            </a>
-          </li>
-          <li class="col-6 col-sm-3  portfolio__item">
-            <a class="portfolio__link">
-              <img class="portfolio__img" src="http://via.placeholder.com/100x50"/>
-            </a>
-          </li>
-          <li class="col-6 col-sm-3  portfolio__item">
-            <a class="portfolio__link">
-              <img class="portfolio__img" src="http://via.placeholder.com/100x50"/>
-            </a>
-          </li>
-          <li class="col-6 col-sm-3  portfolio__item">
-            <a class="portfolio__link">
-              <img class="portfolio__img" src="http://via.placeholder.com/100x50"/>
-            </a>
-          </li>
-          <li class="col-6 col-sm-3  portfolio__item">
-            <a class="portfolio__link">
-              <img class="portfolio__img" src="http://via.placeholder.com/100x50"/>
-            </a>
-          </li>
-          <li class="col-6 col-sm-3  portfolio__item">
-            <a class="portfolio__link">
-              <img class="portfolio__img" src="http://via.placeholder.com/100x50"/>
+              <img class="portfolio__img" src="img/img-app.png"/>
             </a>
           </li>
         </ul>
       </div>
-      <nav aria-label="Page navigation example">
-        <ul class="pagination">
+      <nav class="pagination-nav" aria-label="Pagination">
+        <ul class="pagination justify-content-center">
           <li class="page-item"><a class="page-link" href="#">Previous</a></li>
-          <li class="page-item"><a class="page-link" href="#">1</a></li>
+          <li class="page-item active"><a class="page-link" href="#">1</a></li>
           <li class="page-item"><a class="page-link" href="#">2</a></li>
           <li class="page-item"><a class="page-link" href="#">3</a></li>
           <li class="page-item"><a class="page-link" href="#">Next</a></li>
@@ -154,40 +150,40 @@
             <h2 class="footer__title">Explore</h2>
             <ul class="footer__list">
               <li class="footer__item">
-                <a class="footer__link">Home</a>
+                <a class="footer__link" href="index.html">Home</a>
               </li>
               <li class="footer__item">
-                <a class="footer__link">About us</a>
+                <a class="footer__link" href="#about">About us</a>
               </li>
               <li class="footer__item">
-                <a class="footer__link">Services</a>
+                <a class="footer__link" href="#">Services</a>
               </li>
               <li class="footer__item">
-                <a class="footer__link">Portfolio</a>
+                <a class="footer__link" href="portfolio.html">Portfolio</a>
               </li>
               <li class="footer__item">
-                <a class="footer__link">Blog</a>
+                <a class="footer__link" href="#">Blog</a>
               </li>
             </ul>
           </div>
 
           <div class="col-lg-6 footer__nav">
-            <h2 class="footer__title">Browse</h2>
+            <h2 class="footer__title" href="#">Browse</h2>
             <ul class="footer__list">
               <li class="footer__item">
-                <a class="footer__link">Careers</a>
+                <a class="footer__link" href="#">Careers</a>
               </li>
               <li class="footer__item">
-                <a class="footer__link">Press & Media</a>
+                <a class="footer__link" href="#">Press & Media</a>
               </li>
               <li class="footer__item">
-                <a class="footer__link">Contact Us</a>
+                <a class="footer__link" href="contact.html">Contact Us</a>
               </li>
               <li class="footer__item">
-                <a class="footer__link">Terms of Service</a>
+                <a class="footer__link" href="#">Terms of Service</a>
               </li>
               <li class="footer__item">
-                <a class="footer__link">Privacy Policy</a>
+                <a class="footer__link" href="#">Privacy Policy</a>
               </li>
             </ul>
           </div>
@@ -242,7 +238,7 @@
           </ul>
         </section>
         <section class="col-lg-12 footer__copyright">
-          <span class="footer__copyright-span">© Copyright 2018 - BisLite Inc. All rights reserved.</span>
+          <span class="footer__copyright-span">© Copyright 2018 — BisLite Inc. All rights reserved.</span>
           <a class="footer__copyright-logo" href="#">Bis<span class="blue-text">Lite</span></a>
         </section>
       </div>
@@ -255,4 +251,6 @@
   integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"
   integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+
+  <script src="js/script.js"></script>
 </body>

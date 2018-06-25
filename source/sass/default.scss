@@ -28,11 +28,23 @@ body {
 }
 
 h2 {
-  font-size: $h2-size;
+  font-size: 16px;
   text-transform: uppercase;
+
+  @media (min-width: 768px) {
+    font-size: 18px;
+  }
+
+  @media (min-width: 1200px) {
+    font-size: 20px;
+  }
 }
 
 .blue-text {
   font-family: "Lato Regular", "Helvetica", "Arial", sans-serif;
   color: $blue;
+}
+
+.icon-small {
+  background: url("../img/sprite-small-icons.png");
 }

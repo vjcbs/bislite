@@ -9,8 +9,23 @@
     @include font($name: "Lato Black", $size: 30px);
   }
 
+  .navbar-toggler {
+    &:active,
+    &:focus {
+      outline: none;
+    }
+
+    .navbar-toggler-icon {
+      background: url("../img/icon-menu-open.svg") no-repeat center;
+    }
+  }
+
+  .header__list {
+    margin-top: 10px;
+  }
+
   .header__item {
-    @include font($name: "Lato Regular", $size: 18px);
+    @include font($name: "Lato Regular", $size: 16px);
     font-weight: 600;
     text-transform: uppercase;
   }
@@ -34,6 +49,10 @@
 
     .header__brand {
       font-size: 40px;
+    }
+
+    .header__list {
+      margin-top: 0;
     }
 
     .header__list > .show {
@@ -64,12 +83,17 @@
 
     .header__nav-link {
       // padding: 8px;
-      font-size: 16px;
-      transition: border-top-color 500ms;
+      font-size: 14px;
+      transition: 300ms;
       border-top: 3px solid transparent;
 
       &:hover {
         border-top: 3px solid $blue;
+        opacity: 0.6;
+      }
+
+      &:active {
+        opacity: 0.3;
       }
     }
   }

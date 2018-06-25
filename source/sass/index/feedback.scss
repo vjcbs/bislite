@@ -1,10 +1,6 @@
 .feedback {
   padding: 0;
 
-  // .wrapper {
-  //   padding: 0 30px;
-  // }
-
   .feedback__record,
   .feedback__sources {
     padding: 0;
@@ -23,6 +19,19 @@
   .feedback__title {
     margin-top: 5px;
     margin-left: 10px;
+  }
+
+  .feedback__icon {
+    width: 26px;
+    height: 30px;
+    // background: url("../img/sprite.png") no-repeat;
+    background-position: -75px -2px;
+  }
+
+  .feedback__icon--other {
+    width: 35px;
+    height: 25px;
+    background-position: -28px -8px;
   }
 
   .feedback__record {

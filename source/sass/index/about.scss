@@ -1,10 +1,6 @@
 .about {
   background-color: $lightgray;
 
-  // .wrapper {
-  //   padding: 30px;
-  // }
-
   .about__list {
     @include reset-list;
   }
@@ -31,6 +27,28 @@
     margin-left: 10px;
   }
 
+  .about__icon {
+    width: 40px;
+    height: 40px;
+    background: url("../img/sprite-big-icons.png") no-repeat;
+  }
+
+  .about__icon--theme {
+    background-position: -48px 0;
+  }
+
+  .about__icon--design {
+    background-position: 0 0;
+  }
+
+  .about__icon--psd {
+    background-position: -96px 0;
+  }
+
+  .about__icon--coding {
+    background-position: -144px 0;
+  }
+
   .about__link {
     position: relative;
     padding-left: 15px;
@@ -47,6 +65,10 @@
       transform: translateY(-50%) rotate(-45deg);
     }
   }
+
+  .about__text {
+    font-size: 14px;
+  }
 }
 
 @media (min-width: 576px) {
@@ -61,6 +83,10 @@
   .about {
     .about__title {
       margin-left: 20px;
+    }
+
+    .about__text {
+      font-size: 16px;
     }
   }
 }
