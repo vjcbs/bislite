@@ -5,6 +5,12 @@
     align-items: baseline;
   }
 
+  .contact__header-icon {
+    width: 30px;
+    height: 30px;
+    background-position: -111px 3px;
+  }
+
   .contact__title {
     margin-left: 10px;
   }
@@ -19,6 +25,7 @@
     margin-top: 20px;
     border: none;
     outline: none;
+    cursor: pointer;
     // background: url("../img/sprite.png") no-repeat;
     // background-position:
     // align-self: flex-start;
@@ -32,8 +39,8 @@
     left: 20px;
     width: 30px;
     height: 30px;
-    background: url("../img/sprite.png") no-repeat;
-    background-position: -40px -40px;
+    background: url("../img/sprite-small-icons.png") no-repeat;
+    background-position: -45px -47px;
   }
 
   .contact__submit-caption {

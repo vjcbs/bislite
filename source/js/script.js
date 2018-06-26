@@ -18,4 +18,5 @@ $(document).ready( function() {
     // e.target.classList.add('btn-active');
     $(this).addClass('btn-active');
   })
+
 })
