@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>BisLite</title>
+
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+
+  <!-- <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,800" /> -->
+  <!-- <script defer="" src="js/svgxuse.min.js"></script>
+  <script src="js/picturefill.min.js"></script> -->
+
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="header">
+    <div class="container wrapper">
+      <nav class="navbar navbar-expand-md header__nav">
+        <a class="navbar-brand header__brand" href="index.html">Bis<span class="blue-text">Lite</span></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navMenu" aria-controls="navMenu" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse header__menu-wrapper" id="navMenu">
+          <ul class="navbar-nav ml-auto header__list">
+            <li class="nav-item header__item active">
+              <a class="nav-link header__nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item header__item">
+              <a class="nav-link header__nav-link" href="#">About Us</a>
+            </li>
+            <li class="nav-item header__item dropdown">
+              <a class="nav-link dropdown-toggle header__nav-link" href="#" id="servicesDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Services
+              </a>
+              <div class="dropdown-menu" aria-labelledby="servicesDropdown">
+                <a class="dropdown-item" href="#">Web Design</a>
+                <a class="dropdown-item" href="#">Wordpress Design</a>
+                <a class="dropdown-item" href="#">Mobile App Development</a>
+                <a class="dropdown-item" href="#">Internet Marketing</a>
+                <a class="dropdown-item" href="#">Social Media Management</a>
+              </div>
+            </li>
+            <li class="nav-item header__item">
+              <a class="nav-link header__nav-link" href="portfolio.html">Portfolio</a>
+            </li>
+            <li class="nav-item header__item">
+              <a class="nav-link header__nav-link" href="#">Blog</a>
+            </li>
+            <li class="nav-item header__item">
+              <a class="nav-link header__nav-link" href="contact.html">Contact us</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <section class="portfolio">
+    <div class="wrapper">
+      <header class="portfolio__header">
+        <span class="icon-small portfolio__header-icon"></span>
+        <h2 class="portfolio__title">Portfolio</h2>
+      </header>
+      <div class="btn-group btn-group-sm portfolio__btn-group" role="group" aria-label="Filter">
+        <button type="button" class="btn btn-secondary">All</button>
+        <button type="button" class="btn btn-secondary">Websites</button>
+        <button type="button" class="btn btn-secondary">Icons</button>
+      </div>
+      <div class="portfolio__gallery">
+        <ul class="portfolio__list">
+          <li class="portfolio__item">
+            <div class="portfolio__link">
+              <img class="portfolio__img" src="img/img-bell-btn.png">
+              <div class="infoblock">
+                <a class="infoblock__link" href="#"><span class="infoblock__link-preview"></span></a>
+                <a class="infoblock__link" href="#"><span class="infoblock__link-link"></span></a>
+              </div>
+            </div>
+          </li>
+          <li class="portfolio__item">
+            <a class="portfolio__link">
+              <img class="portfolio__img" src="img/img-gift.png">
+            </a>
+          </li>
+          <li class="portfolio__item">
+            <a class="portfolio__link">
+              <img class="portfolio__img" src="img/img-smile.png">
+            </a>
+          </li>
+          <li class="portfolio__item">
+            <a class="portfolio__link">
+              <img class="portfolio__img" src="img/img-books.png">
+            </a>
+          </li>
+          <li class="portfolio__item">
+            <a class="portfolio__link">
+              <img class="portfolio__img" src="img/img-help-button.png">
+            </a>
+          </li>
+          <li class="portfolio__item">
+            <a class="portfolio__link">
+              <img class="portfolio__img" src="img/img-login.png">
+            </a>
+          </li>
+          <li class=" portfolio__item">
+            <a class="portfolio__link">
+              <img class="portfolio__img" src="img/img-clouds.png">
+            </a>
+          </li>
+          <li class="portfolio__item">
+            <a class="portfolio__link">
+              <img class="portfolio__img" src="img/img-app.png">
+            </a>
+          </li>
+        </ul>
+      </div>
+      <nav class="pagination-nav" aria-label="Pagination">
+        <ul class="pagination justify-content-center">
+          <li class="page-item"><a class="page-link" href="#">Previous</a></li>
+          <li class="page-item active"><a class="page-link" href="#">1</a></li>
+          <li class="page-item"><a class="page-link" href="#">2</a></li>
+          <li class="page-item"><a class="page-link" href="#">3</a></li>
+          <li class="page-item"><a class="page-link" href="#">Next</a></li>
+        </ul>
+      </nav>
+    </div>
+  </section>
+
+  <footer class="container-fluid footer">
+    <div class="wrapper">
+      <div class="row">
+        <section class="col-md-4 col-lg-3 footer__about">
+          <h2 class="footer__title">About us</h2>
+          <p class="footer__text">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi euismod
+            placerat dui et tincidunt. Sed sollicitudin posuere auctor. Phasellus at
+            ultricies nisl. Integer at leo eros. Ut nec lorem id orci convallis porta.
+            Donec pharetra neque eu velit dictum molestie.
+          </p>
+        </section>
+        <section class="col-md-4 col-lg-4 row footer__navs">
+          <div class="col-lg-6 footer__nav">
+            <h2 class="footer__title">Explore</h2>
+            <ul class="footer__list">
+              <li class="footer__item">
+                <a class="footer__link" href="index.html">Home</a>
+              </li>
+              <li class="footer__item">
+                <a class="footer__link" href="index.html#about">About us</a>
+              </li>
+              <li class="footer__item">
+                <a class="footer__link" href="#">Services</a>
+              </li>
+              <li class="footer__item">
+                <a class="footer__link" href="portfolio.html">Portfolio</a>
+              </li>
+              <li class="footer__item">
+                <a class="footer__link" href="#">Blog</a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="col-lg-6 footer__nav">
+            <h2 class="footer__title" href="#">Browse</h2>
+            <ul class="footer__list">
+              <li class="footer__item">
+                <a class="footer__link" href="#">Careers</a>
+              </li>
+              <li class="footer__item">
+                <a class="footer__link" href="#">Press & Media</a>
+              </li>
+              <li class="footer__item">
+                <a class="footer__link" href="contact.html">Contact Us</a>
+              </li>
+              <li class="footer__item">
+                <a class="footer__link" href="#">Terms of Service</a>
+              </li>
+              <li class="footer__item">
+                <a class="footer__link" href="#">Privacy Policy</a>
+              </li>
+            </ul>
+          </div>
+        </section>
+
+        <section class="col-md scol-lg-3 footer__contact">
+          <h2 class="footer__title">Contact Us</h2>
+          <p class="footer__contact-info">
+            <b>BisLite Inc.</b>
+            <br>
+            Always Street 265
+            0X-125-Canada
+          </p>
+          <p class="footer__contact-info">
+            Phone: 987-6543-210<br>
+            Fax: 987-6543-210
+          </p>
+        </section>
+        <section class="col-md col-lg footer__social">
+          <h2 class="footer__title">Connect with us</h2>
+          <ul class="footer__list">
+            <li class="footer__item">
+              <a class="footer__link">
+                <img class="footer__social-icon" src="img/ic-twitter.svg" width="30" height="30">
+              </a>
+            </li>
+            <li class="footer__item">
+              <a class="footer__link">
+                <img class="footer__social-icon" src="img/ic-facebook.svg" width="30" height="30">
+              </a>
+            </li>
+            <li class="footer__item">
+              <a class="footer__link">
+                <img class="footer__social-icon" src="img/ic-linkedin.svg" width="30" height="30">
+              </a>
+            </li>
+            <li class="footer__item">
+              <a class="footer__link">
+                <img class="footer__social-icon" src="img/ic-google+.svg" width="30" height="30">
+              </a>
+            </li>
+            <li class="footer__item">
+              <a class="footer__link">
+                <img class="footer__social-icon" src="img/ic-instagram.svg" width="30" height="30">
+              </a>
+            </li>
+            <li class="footer__item">
+              <a class="footer__link">
+                <img class="footer__social-icon" src="img/ic-reddit.svg" width="30" height="30">
+              </a>
+            </li>
+          </ul>
+        </section>
+        <section class="col-lg-12 footer__copyright">
+          <span class="footer__copyright-span">© Copyright 2018 — BisLite Inc. All rights reserved.</span>
+          <a class="footer__copyright-logo" href="#">Bis<span class="blue-text">Lite</span></a>
+        </section>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+
+  <script src="js/script.js"></script>
+</body>
+</html>

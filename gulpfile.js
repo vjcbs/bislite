@@ -21,7 +21,7 @@ gulp.task("style", function() {
     .pipe(postcss([
       autoprefixer()
     ]))
-    .pipe(gulp.dest("source/css"))
+    .pipe(gulp.dest("build/css"))
     .pipe(server.stream());
 });
 
@@ -84,7 +84,7 @@ gulp.task("build", function(done) {
     "copy",
     "style",
     "html",
-    "images",
+    // "images",
     done
   );
 });
