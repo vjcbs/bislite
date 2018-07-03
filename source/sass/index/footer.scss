@@ -11,18 +11,11 @@
     @include flex-row;
     flex-wrap: wrap;
     justify-content: center;
-    // align-items: center;
   }
 
   .footer__title {
-    // display: block;
-    // margin: 0 auto;
-
-    // width: 50%;
-    // margin: 0 auto;
     margin-bottom: 5px;
     text-align: center;
-    // @include border;
   }
 
   .footer__navs {
@@ -60,6 +53,7 @@
   .footer__contact-info {
     text-align: center;
     margin-top: 5px;
+    width: 100%;
   }
 
   .footer__copyright {
@@ -129,7 +123,6 @@
 
     .footer__social {
       @include flex-column;
-      // align-items: center;
 
       .footer__list {
         flex-direction: row;
@@ -139,11 +132,6 @@
 
       .footer__item {
         margin: 7px 10px;
-
-        // &:nth-child(1),
-        // &:nth-child(4) {
-        //   margin-left: 0;
-        // }
       }
     }
 

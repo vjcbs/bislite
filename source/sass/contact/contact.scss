@@ -1,5 +1,5 @@
 .contact {
-  // @include border(red);
+
   .contact__header {
     @include flex-row;
     align-items: baseline;
@@ -26,10 +26,6 @@
     border: none;
     outline: none;
     cursor: pointer;
-    // background: url("../img/sprite.png") no-repeat;
-    // background-position:
-    // align-self: flex-start;
-    // @include border;
   }
 
   .contact__submit-icon {
@@ -54,7 +50,6 @@
     background-color: #e8fcfe;
     border: 1px solid $lightblue;
     border-radius: 5px;
-
   }
 
   .contact__map-widget {

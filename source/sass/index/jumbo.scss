@@ -3,8 +3,6 @@
 
   .jumbo__title {
     @include font($name: $bold-font, $size: 18px, $color: #ffffff, $lh: 25px);
-    // display: block;
-    // margin: 0 auto 30px;
     width: 40%;
     position: absolute;
     top: 50%;
@@ -17,10 +15,7 @@
     position: relative;
     width: 100%;
     max-width: 992px;
-    // height: 360px;
     margin: 0 auto;
-    // background-color: $red;
-    // overflow: hidden;
 
     img {
       max-width: 100%;
@@ -54,18 +49,5 @@
       font-size: 40px;
       line-height: 43px;
     }
-  }
-}
-
-@media (min-width: 768px) {
-  .jumbo {
-
-    .jumbo__carousel {
-
-      .carousel-item img {
-        // max-width: 800px;
-      }
-    }
-
   }
 }

@@ -83,7 +83,6 @@
     }
 
     .header__nav-link {
-      // padding: 8px;
       font-size: 14px;
       transition: 300ms;
       border-top: 3px solid transparent;
@@ -108,20 +107,11 @@
       font-size: 45px;
     }
 
-    .header__nav {
-      // @include border;
-    }
-
-    .header__list {
-      // @include border;
-    }
-
     .header__item {
       margin: 2px;
     }
 
     .header__nav-link {
-      // padding: 8px;
       font-size: 18px;
     }
   }

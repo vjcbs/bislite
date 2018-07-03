@@ -20,9 +20,7 @@
   .works__title-icon {
     width: 24px;
     height: 24px;
-    // background: url("../img/sprite.png") no-repeat;
     background-position: 0 -10px;
-    // background-color: $lightgray;
   }
 
   .works__controls {
@@ -74,15 +72,11 @@
 
   .works__list {
     @include reset-list;
-    // @include border;
   }
 
   .works__item {
-    // @include border;
     margin-bottom: 10px;
     overflow-y: hidden;
-    // align-self: center;
-    // @include border(red);
   }
 
   .works__item-wrapper {
@@ -99,7 +93,6 @@
   .works__img {
     display: block;
     margin: 0 auto;
-    // box-shadow: 2px 2px 5px 2px #a2a2a2;
   }
 
   .works__info {
