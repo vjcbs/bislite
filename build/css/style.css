@@ -641,7 +641,8 @@ h2 {
     margin-bottom: 20px; }
   .footer .footer__contact-info {
     text-align: center;
-    margin-top: 5px; }
+    margin-top: 5px;
+    width: 100%; }
   .footer .footer__copyright {
     display: -webkit-box;
     display: -ms-flexbox;
