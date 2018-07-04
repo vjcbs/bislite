@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="shortcut icon" href="img/favicon.ico">
+  <title>BisLite</title>
+
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+
+  <link rel="stylesheet" href="css/style.css">
+
+  <script src="https://api-maps.yandex.ru/2.1/?lang=en_US"></script>
+</head>
+<body>
+  <header class="header">
+    <div class="container wrapper">
+      <nav class="navbar navbar-expand-md header__nav">
+        <a class="navbar-brand header__brand" href="index.html">Bis<span class="blue-text">Lite</span></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navMenu" aria-controls="navMenu" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse header__menu-wrapper" id="navMenu">
+          <ul class="navbar-nav ml-auto header__list">
+            <li class="nav-item header__item active">
+              <a class="nav-link header__nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item header__item">
+              <a class="nav-link header__nav-link" href="#">About Us</a>
+            </li>
+            <li class="nav-item header__item dropdown">
+              <a class="nav-link dropdown-toggle header__nav-link" href="#" id="servicesDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Services
+              </a>
+              <div class="dropdown-menu" aria-labelledby="servicesDropdown">
+                <a class="dropdown-item" href="#">Web Design</a>
+                <a class="dropdown-item" href="#">Wordpress Design</a>
+                <a class="dropdown-item" href="#">Mobile App Development</a>
+                <a class="dropdown-item" href="#">Internet Marketing</a>
+                <a class="dropdown-item" href="#">Social Media Management</a>
+              </div>
+            </li>
+            <li class="nav-item header__item">
+              <a class="nav-link header__nav-link" href="portfolio.html">Portfolio</a>
+            </li>
+            <li class="nav-item header__item">
+              <a class="nav-link header__nav-link" href="#">Blog</a>
+            </li>
+            <li class="nav-item header__item">
+              <a class="nav-link header__nav-link" href="contact.html">Contact us</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <section class="contact">
+    <div class="container wrapper">
+      <header class="contact__header">
+        <span class="icon-small contact__header-icon"></span>
+        <h2 class="contact__title">Contact Us</h2>
+      </header>
+      <div class="row">
+        <form class="col-md-6 contact__form" action="https://echo.htmlacademy.ru" method="post">
+          <div class="input-group mb-3">
+            <div class="input-group-prepend">
+              <span class="input-group-text" id="name">Name</span>
+            </div>
+            <input type="text" class="form-control" aria-label="Name" aria-describedby="name">
+          </div>
+
+          <div class="input-group mb-3">
+            <div class="input-group-prepend">
+              <span class="input-group-text" id="email">Email</span>
+            </div>
+            <input type="text" class="form-control" aria-label="Email" aria-describedby="email">
+          </div>
+
+          <div class="input-group mb-3">
+            <div class="input-group-prepend">
+              <span class="input-group-text" id="subject">Subject</span>
+            </div>
+            <input type="text" class="form-control" aria-label="Subject" aria-describedby="subject">
+          </div>
+
+          <div class="input-group">
+            <div class="input-group-prepend">
+              <span class="input-group-text">Description</span>
+            </div>
+            <textarea class="form-control" aria-label="Description" rows="5"></textarea>
+          </div>
+
+          <button class="button contact__form-submit" type="submit" value="submit">
+            <span class="contact__submit-icon"></span>
+            <span class="contact__submit-caption">Submit</span>
+          </button>
+        </form>
+
+        <div class="col-md-6 contact__map">
+          <div class="contact__map-wrapper">
+            <h4 class="contact__map-title">We are here</h4>
+            <div class="contact__map-widget" id="map">
+
+            </div>
+          </div>
+          <div class="contact__map-info">
+            <h4 class="contact__map-title">Office address</h4>
+            <p class="contact__text">
+              <b>BisLite Inc.</b><br>
+              Always Street 265<br>
+              0X - 125 - Canada
+            </p>
+            <p class="contact__text">
+              Phone: 987-6543-210<br>
+              Fax: 987-6543-210
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="container-fluid footer">
+    <div class="wrapper">
+      <div class="row">
+        <section class="col-md-4 col-lg-3 footer__about">
+          <h2 class="footer__title">About us</h2>
+          <p class="footer__text">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi euismod
+            placerat dui et tincidunt. Sed sollicitudin posuere auctor. Phasellus at
+            ultricies nisl. Integer at leo eros. Ut nec lorem id orci convallis porta.
+            Donec pharetra neque eu velit dictum molestie.
+          </p>
+        </section>
+        <section class="col-md-4 col-lg-4 row footer__navs">
+          <div class="col-lg-6 footer__nav">
+            <h2 class="footer__title">Explore</h2>
+            <ul class="footer__list">
+              <li class="footer__item">
+                <a class="footer__link" href="index.html">Home</a>
+              </li>
+              <li class="footer__item">
+                <a class="footer__link" href="index.html#about">About us</a>
+              </li>
+              <li class="footer__item">
+                <a class="footer__link" href="#">Services</a>
+              </li>
+              <li class="footer__item">
+                <a class="footer__link" href="portfolio.html">Portfolio</a>
+              </li>
+              <li class="footer__item">
+                <a class="footer__link" href="#">Blog</a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="col-lg-6 footer__nav">
+            <h2 class="footer__title">Browse</h2>
+            <ul class="footer__list">
+              <li class="footer__item">
+                <a class="footer__link" href="#">Careers</a>
+              </li>
+              <li class="footer__item">
+                <a class="footer__link" href="#">Press & Media</a>
+              </li>
+              <li class="footer__item">
+                <a class="footer__link" href="contact.html">Contact Us</a>
+              </li>
+              <li class="footer__item">
+                <a class="footer__link" href="#">Terms of Service</a>
+              </li>
+              <li class="footer__item">
+                <a class="footer__link" href="#">Privacy Policy</a>
+              </li>
+            </ul>
+          </div>
+        </section>
+
+        <section class="col-md scol-lg-3 footer__contact">
+          <h2 class="footer__title">Contact Us</h2>
+          <p class="footer__contact-info">
+            <b>BisLite Inc.</b>
+            <br>
+            Always Street 265
+            0X-125-Canada
+          </p>
+          <p class="footer__contact-info">
+            Phone: 987-6543-210<br>
+            Fax: 987-6543-210
+          </p>
+        </section>
+        <section class="col-md col-lg footer__social">
+          <h2 class="footer__title">Connect with us</h2>
+          <ul class="footer__list">
+            <li class="footer__item">
+              <a class="footer__link">
+                <img class="footer__social-icon" src="img/ic-twitter.svg" alt="TW" width="30" height="30">
+              </a>
+            </li>
+            <li class="footer__item">
+              <a class="footer__link">
+                <img class="footer__social-icon" src="img/ic-facebook.svg" alt="FB" width="30" height="30">
+              </a>
+            </li>
+            <li class="footer__item">
+              <a class="footer__link">
+                <img class="footer__social-icon" src="img/ic-linkedin.svg" alt="LI" width="30" height="30">
+              </a>
+            </li>
+            <li class="footer__item">
+              <a class="footer__link">
+                <img class="footer__social-icon" src="img/ic-google+.svg" alt="G+" width="30" height="30">
+              </a>
+            </li>
+            <li class="footer__item">
+              <a class="footer__link">
+                <img class="footer__social-icon" src="img/ic-instagram.svg" alt="IG" width="30" height="30">
+              </a>
+            </li>
+            <li class="footer__item">
+              <a class="footer__link">
+                <img class="footer__social-icon" src="img/ic-reddit.svg" alt="RD" width="30" height="30">
+              </a>
+            </li>
+          </ul>
+        </section>
+        <section class="col-lg-12 footer__copyright">
+          <span class="footer__copyright-span">© Copyright 2018 — BisLite Inc. All rights reserved.</span>
+          <a class="footer__copyright-logo" href="#">Bis<span class="blue-text">Lite</span></a>
+        </section>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+
+  <script src="js/script.js"></script>
+
+  <script>
+    ymaps.ready(init);
+
+    var myMap,
+        myPlacemark;
+
+    function init(){
+      myMap = new ymaps.Map('map', {
+          center: [43.654824, -79.456215],
+          zoom: 17
+      });
+
+      myPlacemark = new ymaps.Placemark([43.654824, -79.456215], { hintContent: 'BisLite', balloonContent: 'BisLite: We are here'
+          });
+
+      myMap.geoObjects.add(myPlacemark);
+    }
+  </script>
+</body>
+</html>
