@@ -78,7 +78,7 @@ gulp.task("clean", function (){
 
 gulp.task("copy", function() {
   return gulp.src([
-    "source/fonts/**/*.{woff,woff2}",
+    "source/fonts/**/*.{woff,woff2,ttf,otf}",
     "source/img/**",
     "source/js/**",
     "source/*.html"
