@@ -1,53 +1,46 @@
 .jumbo {
   background-color: $lightblue;
+}
 
-  .jumbo__title {
-    @include font($name: $bold-font, $size: 18px, $color: #ffffff, $lh: 25px);
-    width: 40%;
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    text-align: center;
-  }
+.jumbo__title {
+  @include font($name: $bold-font, $size: 18px, $color: #ffffff, $lh: 25px);
+  width: 40%;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  text-align: center;
+}
 
-  .jumbo__img-wrapper {
-    @include border;
-    position: relative;
-    width: 100%;
-    max-width: 992px;
-    margin: 0 auto;
+.jumbo__img-wrapper {
+  @include border;
+  position: relative;
+  width: 100%;
+  max-width: 992px;
+  margin: 0 auto;
 
-    img {
-      max-width: 100%;
-    }
+  img {
+    max-width: 100%;
   }
 }
 
 @media (min-width: 450px) {
-  .jumbo {
-    .jumbo__title {
-      font-size: 25px;
-      line-height: 28px;
-    }
+  .jumbo__title {
+    font-size: 25px;
+    line-height: 28px;
   }
 }
 
 @media (min-width: 576px) {
-  .jumbo {
-
-    .jumbo__title {
-      font-size: 30px;
-      line-height: 35px;
-    }
+  .jumbo__title {
+    font-size: 30px;
+    line-height: 35px;
   }
 }
 
 @media (min-width: 768px) {
-  .jumbo {
-
-    .jumbo__title {
-      font-size: 40px;
-      line-height: 43px;
-    }
+  .jumbo__title {
+    font-size: 40px;
+    line-height: 43px;
+    left: 20px;
   }
 }
